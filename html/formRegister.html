@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+
+    <!---------css----------->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            background-color: #eee;
+        }
+        
+        .my-form {
+            padding: 20px 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="container-wrap">
+
+        <form id="register-form" class="my-form">
+            <h3 class="title">免费注册</h3>
+
+            <ul class="form-list">
+                <li class="form-item username">
+                    <input type="text" id="username-input" placeholder="姓名" />
+                </li>
+                <li class="form-item stu-no">
+                    <input type="text" id="stu-no-input" placeholder="学号" />
+                </li>
+                <li class="form-item gender">
+                    <div class="gender-radio">
+                        <p class="title-male">男</p>
+                        <input type="radio" name="gender-radio" id="male-radio" value="1" checked="checked">
+                        <p class="title-female">女</p>
+                        <input type="radio" name="gender-radio" id="female-radio" value="2">
+                    </div>
+                </li>
+                <li class="form-item qq">
+                    <input type="text" id="qq-input" placeholder="QQ" />
+                </li>
+                <li class="form-item wx">
+                    <input type="text" id="wx-input" placeholder="微信" />
+                </li>
+                <li class="form-item phone">
+                    <input type="text" id="phone-input" placeholder="手机号" />
+                </li>
+                <li class="form-item password">
+                    <input type="password" id="password-input" placeholder="密码" />
+                </li>
+
+            </ul>
+
+            <a href="#" class="to-login">已有账号，立即登录</a>
+
+            <button type="button" class="submit">立即注册</button>
+        </form>
+
+    </div>
+
+
+
+
+    <!----------js------------>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+
+
+</html>

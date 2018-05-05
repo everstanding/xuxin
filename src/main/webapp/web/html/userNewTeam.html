@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>发布新的组队</title>
+
+    <!---------css----------->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
+    <link href="../css/select.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            background-color: rgb(247, 247, 247);
+        }
+        
+        .select-row ul.multi-labels {
+            width: 465px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <head>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-top-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="global-top-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="act"><a href="#">广播</a></li>
+                        <li><a href="#">学习组队</a></li>
+                        <li><a href="#">项目组队</a></li>
+                        <li><a href="#">学习经验分享</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="user-name"><a href="#">用户名</a></li>
+                        <li class="portrait">
+                            <a href="#"><img src="images/portrait.jpg" /></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </head>
+
+
+    <div id="container-wrap">
+
+        <div class="global-banner"></div>
+
+        <div id="my-middle-container">
+
+            <div id="left-bar">
+                <div class="portrait">
+                    <img src="../images/icon-people-gray.png" />
+                    <p>姓名</p>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="info act"><a href="#">基本信息</a></li>
+                    <li role="presentation" class="my-team"><a href="#">我的组队</a></li>
+                    <li role="presentation" class="new-team"><a href="#">发布新的组队</a></li>
+                    <li role="presentation" class="my-article"><a href="#">我分享的经验</a></li>
+                    <li role="presentation" class="new-article"><a href="#">发布新的经验分享</a></li>
+                    <li role="presentation" class="log-out"><a href="#">登出</a></li>
+                </ul>
+            </div>
+
+            <div id="user-right-wrap">
+                <div class="global-title">
+                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                    <p>发布新的组队</p>
+                </div>
+
+                <!-------------new-team-panel--------------->
+                <div id="new-team-panel">
+
+                    <div class="select-row">
+                        <p class="title">标题</p>
+                        <input type="text" class="global-input" id="team-title">
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">分类</p>
+                        <ul class="label-list single-labels" id="people-select">
+                            <li class="my-label act">学习组队</li>
+                            <li class="my-label">项目组队</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">年级</p>
+                        <ul class="label-list single-labels" id="grade-select">
+                            <li class="my-label act">不限制</li>
+                            <li class="my-label">大一</li>
+                            <li class="my-label">大二</li>
+                            <li class="my-label">大三</li>
+                            <li class="my-label">大四</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">人数</p>
+                        <ul class="label-list single-labels" id="people-select">
+                            <li class="my-label act">不限制</li>
+                            <li class="my-label">1人</li>
+                            <li class="my-label">2人</li>
+                            <li class="my-label">3人</li>
+                            <li class="my-label">4人</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">需求科目</p>
+                        <div class="nice-select" name="nice-select" id="need-nice-select">
+                            <input type="text" value="" readonly>
+                            <ul>
+                                <li data-value="1">java</li>
+                                <li data-value="2">数据库</li>
+                                <li data-value="3">相关链接3</li>
+                                <li data-value="4">相关链接4</li>
+                            </ul>
+                        </div>
+                        <ul class="label-list multi-labels" id="need-subject-select">
+                            <!--                            <li class="my-label">操作系统</li>-->
+
+                        </ul>
+
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">可提供科目</p>
+                        <div class="nice-select" name="nice-select" id="supply-nice-select">
+                            <input type="text" value="" readonly>
+                            <ul>
+                                <li data-value="1">相关链接1</li>
+                                <li data-value="2">相关链接2</li>
+                                <li data-value="3">相关链接3</li>
+                                <li data-value="4">相关链接4</li>
+                            </ul>
+                        </div>
+                        <ul class="label-list multi-labels" id="supply-subject-select">
+                            <!--                            <li class="my-label">操作系统</li>-->
+
+                        </ul>
+
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title" style="width:150px">心愿or自我介绍</p>
+                        <textarea id="team-detail"></textarea>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <button type="button" class="submit">提交组队</button>
+
+
+                </div>
+                <!-------------/new-team-panel--------------->
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
+
+    <!----------js------------>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#left-bar").find(".new-team").addClass("act").siblings().removeClass("act");
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>

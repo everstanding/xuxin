@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>项目组队</title>
+
+    <!---------css----------->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/select.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        #learning-team-wrap {
+            width: 100%;
+        }
+        
+        .message-box {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <head>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-top-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="global-top-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="broadcast"><a href="#">广播</a></li>
+                        <li class="learning-team"><a href="#">学习组队</a></li>
+                        <li class="project-team"><a href="#">项目组队</a></li>
+                        <li class="article"><a href="#">学习经验分享</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="user-name"><a href="#">用户名</a></li>
+                        <li class="portrait">
+                            <a href="#"><img src="images/portrait.jpg" /></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </head>
+
+
+    <div id="container-wrap">
+
+        <div class="global-banner"></div>
+
+        <div id="my-middle-container">
+
+            <div id="select-bar">
+
+                <div class="global-title">
+                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                    <p>选择需要的项目组队</p>
+                </div>
+
+                <!---------------select-list---------------->
+                <div class="select-list">
+
+                    <div class="select-row">
+                        <p class="title">年级</p>
+                        <ul class="label-list single-labels" id="grade-select">
+                            <li class="my-label act" data-id="0">不限制</li>
+                            <li class="my-label" data-id="1">大一</li>
+                            <li class="my-label" data-id="2">大二</li>
+                            <li class="my-label" data-id="3">大三</li>
+                            <li class="my-label" data-id="4">大四</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">人数</p>
+                        <ul class="label-list single-labels" id="people-select">
+                            <li class="my-label act" data-id="0">不限制</li>
+                            <li class="my-label" data-id="1">1人</li>
+                            <li class="my-label" data-id="2">2人</li>
+                            <li class="my-label" data-id="3">3人</li>
+                            <li class="my-label" data-id="4">4人</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">需求科目</p>
+                        <div class="nice-select" name="nice-select" id="need-nice-select">
+                            <input type="text" value="" readonly>
+                            <ul>
+                                <li data-id="1">相关链接1</li>
+                                <li data-id="2">相关链接2</li>
+                                <li data-id="3">相关链接3</li>
+                                <li data-id="4">相关链接4</li>
+                            </ul>
+                        </div>
+                        <ul class="label-list multi-labels" id="need-subject-select">
+                            <!--                            <li class="my-label" data-id="">操作系统</li>-->
+
+                        </ul>
+
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">可提供科目</p>
+                        <div class="nice-select" name="nice-select" id="supply-nice-select">
+                            <input type="text" value="" readonly>
+                            <ul>
+                                <li data-id="1">相关链接1</li>
+                                <li data-id="2">相关链接2</li>
+                                <li data-id="3">相关链接3</li>
+                                <li data-id="4">相关链接4</li>
+                            </ul>
+                        </div>
+                        <ul class="label-list multi-labels" id="supply-subject-select">
+                            <!--                            <li class="my-label">操作系统</li>-->
+
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+                <!---------------/select-list---------------->
+
+                <div class="clear-div" style="clear:both"></div>
+
+                <button type="button" id="submit-select">提交</button>
+
+            </div>
+
+            <div class="global-title">
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                <p>TEAM</p>
+            </div>
+
+            <div id="learning-team-wrap">
+                <div class="message-box">
+                    <img src="../images/icon-people-gray.png" class="portrait" />
+                    <p class="name">name</p>
+                    <p class="title">滚动监听插件</p>
+                    <p class="detail">滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。</p>
+                    <div class="box-bottom">
+                        <ul class="labels">
+                            <li class="label">label1</li>
+                            <li class="label">label2</li>
+                            <li class="label">label3</li>
+                        </ul>
+                        <div class="other">
+                            <button type="button" class="thumbs-up">赞</button>
+                            <p class="hits-number">13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-box">
+                    <img src="../images/icon-people-gray.png" class="portrait" />
+                    <p class="name">name</p>
+                    <p class="title">滚动监听插件</p>
+                    <p class="detail">滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。</p>
+                    <div class="box-bottom">
+                        <ul class="labels">
+                            <li class="label">label1</li>
+                            <li class="label">label2</li>
+                            <li class="label">label3</li>
+                        </ul>
+                        <div class="other">
+                            <button type="button" class="thumbs-up">赞</button>
+                            <p class="hits-number">13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-box">
+                    <img src="../images/icon-people-gray.png" class="portrait" />
+                    <p class="name">name</p>
+                    <p class="title">滚动监听插件</p>
+                    <p class="detail">滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。如下所示，滚动导航条下面的区域并关注导航项的变化。下拉菜单中的条目也会自动高亮显示。</p>
+                    <div class="box-bottom">
+                        <ul class="labels">
+                            <li class="label">label1</li>
+                            <li class="label">label2</li>
+                            <li class="label">label3</li>
+                        </ul>
+                        <div class="other">
+                            <button type="button" class="thumbs-up">赞</button>
+                            <p class="hits-number">13</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
+
+    <!----------js------------>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //navbar act
+            $("#global-top-navbar").find(".project-team").addClass("act").siblings().removeClass("act");
+            //multi-select empty
+            $(".multi-labels").empty();
+        });
+
+
+        //click select submit
+        $("#submit-select").on("click", function() {
+            var needLabelString = '',
+                supplyLabelString = '';
+            var gradeString = $("#grade-select").find(".act").attr("data-id");
+            var peopleString = $("#people-select").find(".act").attr("data-id");
+            //need label list
+            var needLabelList = $("#need-subject-select").find("li");
+            for (var i = 0; i < needLabelList.length; i++) {
+                if (i > 0) {
+                    needLabelString += '_';
+                }
+                needLabelString += needLabelList.eq(i).attr("data-id");
+            }
+            //supply label list
+            var supplyLabelList = $("#supply-subject-select").find("li");
+            for (var i = 0; i < supplyLabelList.length; i++) {
+                if (i > 0) {
+                    supplyLabelString += '_';
+                }
+                supplyLabelString += supplyLabelList.eq(i).attr("data-id");
+            }
+
+            console.log("gradeString:" + gradeString);
+            console.log("peopleString:" + peopleString);
+            console.log("needLabelString:" + needLabelString);
+            console.log("supplyLabelString:" + supplyLabelString);
+
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>

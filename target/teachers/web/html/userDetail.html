@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习组队</title>
+
+    <!---------css----------->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/userDetail.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .global-banner {
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <head>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-top-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="global-top-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="broadcast"><a href="#">广播</a></li>
+                        <li class="learning-team"><a href="#">学习组队</a></li>
+                        <li class="project-team"><a href="#">项目组队</a></li>
+                        <li class="article"><a href="#">学习经验分享</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="user-name"><a href="#">用户名</a></li>
+                        <li class="portrait">
+                            <a href="#"><img src="images/portrait.jpg" /></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </head>
+
+
+    <div id="container-wrap">
+
+        <div class="global-banner"></div>
+
+        <div id="my-middle-container">
+
+            <div id="user-detail-top">
+                <img src="../images/portrait.jpg" class="portrait" />
+                <p class="username">用户名</p>
+                <div class="detail-list">
+                    <p class="gender">性别：<span>男</span></p>
+                    <p class="stu-no">学号：<span>10152510000</span></p>
+                    <br/>
+                    <p class="qq">QQ：<span>12312378</span></p>
+                    <p class="wx">微信：<span>123123</span></p>
+                    <p class="phone">手机：<span>18011112222</span></p>
+                </div>
+
+            </div>
+
+            <div class="global-title">
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                <p>ta的组队</p>
+            </div>
+
+            <div id="user-detail-team">
+                <!--                <h3 class="title">ta的组队</h3>-->
+                <ul class="user-detail-list">
+                    <li class="item"><a href="#">设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统</a></li>
+                    <li class="item"><a href="#">设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统</a></li>
+                </ul>
+            </div>
+
+            <div class="global-title">
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                <p>ta的经验分享</p>
+            </div>
+
+            <div id="user-detail-article">
+                <!--                <h3 class="title">ta的经验分享</h3>-->
+                <ul class="user-detail-list">
+                    <li class="item"><a href="#">team1</a></li>
+                    <li class="item"><a href="#">team2</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
+
+    <!----------js------------>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#global-top-navbar").find(".learning-team").addClass("act").siblings().removeClass("act");
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>

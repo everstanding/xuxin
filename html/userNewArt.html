@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>分享新的经验</title>
+
+    <!---------css----------->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
+    <link href="../css/select.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            background-color: rgb(247, 247, 247);
+        }
+        
+        .select-row .title {
+            width: 150px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <head>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-top-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="global-top-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="act"><a href="#">广播</a></li>
+                        <li><a href="#">学习组队</a></li>
+                        <li><a href="#">项目组队</a></li>
+                        <li><a href="#">学习经验分享</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="user-name"><a href="#">用户名</a></li>
+                        <li class="portrait">
+                            <a href="#"><img src="images/portrait.jpg" /></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </head>
+
+
+    <div id="container-wrap">
+
+        <div class="global-banner"></div>
+
+        <div id="my-middle-container">
+
+            <div id="left-bar">
+                <div class="portrait">
+                    <img src="../images/icon-people-gray.png" />
+                    <p>姓名</p>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="info act"><a href="#">基本信息</a></li>
+                    <li role="presentation" class="my-team"><a href="#">我的组队</a></li>
+                    <li role="presentation" class="new-team"><a href="#">发布新的组队</a></li>
+                    <li role="presentation" class="my-article"><a href="#">我分享的经验</a></li>
+                    <li role="presentation" class="new-article"><a href="#">发布新的经验分享</a></li>
+                    <li role="presentation" class="log-out"><a href="#">登出</a></li>
+                </ul>
+            </div>
+
+            <div id="user-right-wrap">
+                <div class="global-title">
+                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                    <p>发布新的经验分享</p>
+                </div>
+
+                <!-------------new-article-panel--------------->
+                <div id="new-article-panel">
+
+                    <div class="select-row">
+                        <p class="title">标题</p>
+                        <input type="text" class="global-input" id="article-title">
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title">链接</p>
+                        <input type="text" class="global-input" id="article-link">
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <div class="select-row">
+                        <p class="title" style="width:150px">心愿or自我介绍</p>
+                        <textarea id="team-detail"></textarea>
+                    </div>
+
+                    <div class="clear-div" style="clear:both"></div>
+
+                    <button type="button" class="submit">发布经验</button>
+
+
+                </div>
+                <!-------------/new-article-panel--------------->
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        footer
+    </footer>
+
+
+    <!----------js------------>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#left-bar").find(".new-article").addClass("act").siblings().removeClass("act");
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>

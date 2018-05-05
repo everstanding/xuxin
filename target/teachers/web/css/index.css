@@ -1,0 +1,147 @@
+/*************index-carousel************/
+
+#index-carousel {
+    width: 750px;
+    height: 300px;
+}
+
+#index-carousel .carousel-inner img {
+    width: 100%;
+    height: 300px;
+}
+
+#index-carousel .carousel-indicators {
+    margin-bottom: 0;
+}
+
+#index-carousel .carousel-indicators>li {
+    width: 6px;
+    height: 6px;
+    background-color: #ccc;
+    border: none;
+}
+
+#index-carousel .carousel-indicators>li.active {
+    width: 8px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+#index-carousel .carousel-control {
+    color: #fff;
+    font-weight: 200;
+    opacity: 0.6;
+    background: none;
+}
+
+#index-carousel .carousel-control:hover {
+    opacity: 1.0;
+}
+
+#index-carousel .center-vertical-left {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 30px;
+}
+
+#index-carousel .center-vertical-right {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    font-size: 30px;
+}
+
+
+/*****************#broadcast-wrap*******************/
+
+#broadcast-wrap {
+    width: 750px;
+    padding: 5px 0;
+    margin: 20px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+
+/**************right-col***************/
+
+#right-col-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    min-height: 600px;
+}
+.right-col{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.right-col .rank-title {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #24a888;
+}
+
+ul.ranking-list {
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ranking-list li.rank-item {
+    display: block;
+    height: 30px;
+    width: 100%;
+    clear: both;
+}
+
+.ranking-list li.rank-item .number {
+    display: block;
+    float: left;
+    width: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.ranking-list li.rank-item .title {
+    display: block;
+    float: left;
+    width: 150px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    white-space: nowrap;
+    /*规定段落中的文本不进行换行*/
+    text-overflow: ellipsis;
+    /*文字段在容器内超宽时，截断该文字段并且续以省略号*/
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ranking-list li.rank-item .title a {
+    color: #555;
+    font-size: 14px;
+}
+
+.ranking-list li.rank-item .title a:hover {
+    text-decoration: none;
+    color: #24a888;
+}
+
+.ranking-list li.rank-item .portrait{
+    display: block;
+    float: left;
+    width:25px;
+    height:25px;
+    margin-right: 5px;
+    -moz-border-radius: 50%; /* Firefox */
+    -webkit-border-radius: 50%; /* Safari 和 Chrome */
+    border-radius: 50%; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}

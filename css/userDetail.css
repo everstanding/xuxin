@@ -1,0 +1,124 @@
+#user-detail-top {
+    margin-top: 90px;
+    z-index: 5000;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#user-detail-top img.portrait {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#user-detail-top .username {
+    position: absolute;
+    top: 22px;
+    left: 186px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+#user-detail-top .detail-list {
+    position: absolute;
+    top: 88px;
+    left: 186px;
+    font-size: 13px;
+}
+
+#user-detail-top .detail-list p {
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 30px;
+    line-height: 27px;
+    color: #333;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#user-detail-top p.username {
+    padding-left: 40px;
+    background-image: url(../images/icon-user-white.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#user-detail-top p.gender {
+    background-image: url(../images/icon-gender-blue.png);
+}
+
+#user-detail-top p.qq {
+    background-image: url(../images/icon-qq-blue.png);
+}
+
+#user-detail-top p.wx {
+    background-image: url(../images/icon-wx-blue.png);
+}
+
+#user-detail-top p.phone {
+    background-image: url(../images/icon-phone-blue.png);
+}
+
+#user-detail-top p.stu-no {
+    background-image: url(../images/icon-number-blue.png);
+}
+
+
+/********user-detail-team********/
+
+#user-detail-team {
+    margin: 25px 0;
+}
+
+
+/********user-detail-article********/
+
+#user-detail-article {
+    margin: 25px 0;
+}
+
+ul.user-detail-list {
+    width: 100%;
+}
+
+ul.user-detail-list>li {
+    padding-left: 40px;
+    line-height: 50px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    /*规定段落中的文本不进行换行*/
+    text-overflow: ellipsis;
+    /*文字段在容器内超宽时，截断该文字段并且续以省略号*/
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#user-detail-team .user-detail-list>li {
+    background-image: url(../images/icon-group-blue.png);
+}
+
+#user-detail-article .user-detail-list>li {
+    background-image: url(../images/icon-link-blue.png);
+}
+
+ul.user-detail-list>li>a {
+    text-decoration: none;
+    color: #555;
+}
+
+ul.user-detail-list>li>a:hover {
+    color: #37BC9B;
+}

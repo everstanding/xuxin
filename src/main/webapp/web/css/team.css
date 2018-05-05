@@ -1,0 +1,70 @@
+#team-detail-panel {
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    width: 690px;
+    padding: 30px 40px;
+    background-color: #fff;
+    box-shadow: 0 -5px 20px #ddd, /*top*/
+    0 5px 20px #ddd, /*bottom*/
+    -5px 0 20px #ddd, /*left*/
+    5px 0 20px #ddd;
+    /*right*/
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#team-detail-panel h3 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #555;
+}
+
+#team-detail-panel .row {
+    margin: 0 auto;
+    line-height: 40px;
+    width: 96%;
+    clear: both;
+}
+
+#team-detail-panel .row .title {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+#team-detail-panel .row .content {
+    display: block;
+    float: left;
+    width: 76%;
+    white-space: nowrap;
+    /*规定段落中的文本不进行换行*/
+    text-overflow: ellipsis;
+    /*文字段在容器内超宽时，截断该文字段并且续以省略号*/
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#team-detail-panel .label-list {
+    display: block;
+    float: left;
+    width: 76%;
+}
+
+#team-detail-panel .label-list li {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 3px 4px;
+    line-height: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #37BC9B;
+    color: #fff;
+    font-size: 13px;
+}
