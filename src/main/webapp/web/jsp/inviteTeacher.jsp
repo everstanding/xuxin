@@ -39,7 +39,21 @@
         .global-title {
             margin-top: 30px;
         }
-
+        .my-btn{
+            padding: 5px 20px;
+            background-color: #37BC9B;
+            color: #fff;
+            border: none;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            letter-spacing: 4px;
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
     </style>
 </head>
 
@@ -54,7 +68,15 @@
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
             <p>TEACHER</p>
         </div>
+        <div style="float:left">
+            <p>老师姓名</p> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
+            <p>老师姓名</p> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
+        </div>
+        <div class="item" style="float:right">
+            <img src="/web/images/2.jpg" alt="">
+        </div>
     </div>
+
 
 </div>
 
