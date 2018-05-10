@@ -136,7 +136,7 @@
                 <c:forEach items="${post}" var="item"    varStatus="id" >
                     <li class="question-box">
                         <p class="title">${item.pTitle}-------------------------${item.uName}</p>
-                        <a href="question.jsp" onclick=""><p class="content">${item.pMain}</p></a>
+                        <a href="/young/${item.pId}/post" onclick=""><p class="content">${item.pMain}</p></a>
                     </li>
                 </c:forEach>
             </ul>

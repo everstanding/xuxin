@@ -27,6 +27,7 @@
                     <li class="project-team"><a href="${pageContext.request.contextPath}/young/projectTeam">项目组队</a></li>
                     <li class="article"><a href="${pageContext.request.contextPath}/young/articalShare">学习经验分享</a></li>
                     <li class="chat"><a href="${pageContext.request.contextPath}/young/p/1/post">交流问题</a></li>
+                    <li class="chat"><a href="${pageContext.request.contextPath}/young/inviteTeacher">邀请教师</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="user-name"><a href="${pageContext.request.contextPath}/young/userInfo">${USER.uName}</a></li>

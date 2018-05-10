@@ -582,5 +582,10 @@ public class YoungController extends BaseController {
         return modelAndView;
     }
 
-
+    @RequestMapping(value = "/inviteTeacher", method = RequestMethod.GET)
+    public ModelAndView inviteTeacher() throws Exception {
+        ModelAndView modelAndView = getModelAndView();
+        modelAndView.setViewName("inviteTeacher");
+        return modelAndView;
+    }
 }
