@@ -648,10 +648,17 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
 
     @Override
     public ArrayList<TeacherVo> get_allteacher() {
-        ArrayList<TeacherVo> teachers = (ArrayList<TeacherVo>) baseDAO.findBySQL("" +
+        ArrayList<TeacherVo> teachers = (ArrayList<TeacherVo>) baseDAO.findBySQLForVO("" +
                         "select t_id as tId ,t_name as tName from Teacher"
-                ,new Object[]{});
-        System.out.println(teachers.size());
+                ,TeacherVo.class,new Object[]{});
         return teachers;
+    }
+
+    @Override
+    public ArrayList<UserVo> get_allstudent() {
+        ArrayList<UserVo> users = (ArrayList<UserVo>) baseDAO.findBySQLForVO("" +
+                        "select u_id as uId ,u_name as uName from User"
+                ,UserVo.class,new Object[]{});
+        return users;
     }
 }

@@ -44,7 +44,7 @@ public interface IYoungService {
     public Post get_post_by_id(int id);
     public ArrayList<FloorVo> get_floors_by_page(int p_id);
     public ArrayList<TeacherVo> get_allteacher();
-
+    public ArrayList<UserVo> get_allstudent();
     public int add_post(int u_id , String title , String main);
 
 

@@ -70,6 +70,7 @@ public class YoungController extends BaseController {
         return modelAndView;
     }
 
+
     @RequestMapping(value = "/learningTeam", method = RequestMethod.GET)
     public ModelAndView learningTeam() throws Exception {
         ModelAndView modelAndView = getModelAndView();
@@ -292,7 +293,11 @@ public class YoungController extends BaseController {
 
             }
             else if(user.equals("administration")){
-                modelAndView.setViewName("index2" );
+                ArrayList<UserVo> users = youngService.get_allstudent();
+                modelAndView.getModel().put("users", users);
+                ArrayList<TeacherVo> teachers = youngService.get_allteacher();
+                modelAndView.getModel().put("teachers", teachers);
+                modelAndView.setViewName("index2");
             }
             else{
                 modelAndView.getModel().put("msg", "请选择登录用户类型");
@@ -602,4 +607,5 @@ public class YoungController extends BaseController {
         modelAndView.setViewName("teacher");
         return modelAndView;
     }
+
 }

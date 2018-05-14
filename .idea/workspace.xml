@@ -7,29 +7,16 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/web/html" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java" line="331" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java" line="336" />
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/web/jsp/chat.jsp" line="138" mnemonic="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75222e94-a613-4dca-ab29-858e18d12059" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web/jsp/teacher.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java" afterPath="$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/young/entity/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/com/young/entity/Teacher.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java" afterPath="$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/young/services/young/impl/YoungServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/young/services/young/impl/YoungServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/young/vo/TeacherVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/young/vo/TeacherVo.java" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/young/controller/young/YoungController.class" afterPath="$PROJECT_DIR$/target/classes/com/young/controller/young/YoungController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/young/services/young/IYoungService.class" afterPath="$PROJECT_DIR$/target/classes/com/young/services/young/IYoungService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/young/services/young/impl/YoungServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/young/services/young/impl/YoungServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/teachers.war" afterPath="$PROJECT_DIR$/target/teachers.war" />
-      <change beforePath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/controller/young/YoungController.class" afterPath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/controller/young/YoungController.class" />
-      <change beforePath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/services/young/IYoungService.class" afterPath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/services/young/IYoungService.class" />
-      <change beforePath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/services/young/impl/YoungServiceImpl.class" afterPath="$PROJECT_DIR$/target/teachers/WEB-INF/classes/com/young/services/young/impl/YoungServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/teachers/web/jsp/index2.jsp" afterPath="$PROJECT_DIR$/target/teachers/web/jsp/index2.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/teachers/web/jsp/inviteTeacher.jsp" afterPath="$PROJECT_DIR$/target/teachers/web/jsp/inviteTeacher.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="YoungController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YoungController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="578" column="55" lean-forward="true" selection-start-line="578" selection-start-column="55" selection-end-line="578" selection-end-column="55" />
+            <state relative-caret-position="1216">
+              <caret line="594" column="0" lean-forward="false" selection-start-line="594" selection-start-column="0" selection-end-line="594" selection-end-column="0" />
               <folding>
                 <element signature="method#learningTeam#0;class#YoungController#0" expanded="false" />
                 <element signature="method#userDetail#0;class#YoungController#0" expanded="false" />
@@ -78,11 +65,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TeamController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/TeamController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="119" column="25" lean-forward="false" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index2.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index1.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="19" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="YoungServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/young/services/young/impl/YoungServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="653" column="44" lean-forward="false" selection-start-line="653" selection-start-column="44" selection-end-line="653" selection-end-column="44" />
+            <state relative-caret-position="418">
+              <caret line="663" column="1" lean-forward="false" selection-start-line="663" selection-start-column="1" selection-end-line="663" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -91,8 +108,8 @@
       <file leaf-file-name="inviteTeacher.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="55" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -193,14 +210,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/articalShare.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/teacher.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/daos/BaseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/vo/TeacherVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/young/entity/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/services/young/impl/YoungServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/young/entity/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp" />
       </list>
     </option>
   </component>
@@ -223,7 +240,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="394" />
     <option name="width" value="860" />
     <option name="height" value="728" />
@@ -765,16 +782,15 @@
       <workItem from="1525829385122" duration="4132000" />
       <workItem from="1525935968696" duration="1755000" />
       <workItem from="1526178937819" duration="674000" />
-      <workItem from="1526262763840" duration="8191000" />
+      <workItem from="1526262763840" duration="12019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402437000" />
+    <option name="totallyTimeSpent" value="406265000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
@@ -794,7 +810,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13858268" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40787402" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13065925" sideWeight="0.25497076" order="6" side_tool="true" content_ui="tabs" />
@@ -925,14 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="107" column="22" lean-forward="false" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/result.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1040,34 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/navbar.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="29" column="104" lean-forward="false" selection-start-line="29" selection-start-column="104" selection-end-line="29" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/TeamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1188,14 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/young/vo/TeacherVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1213,18 +1189,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/services/young/IYoungService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/young/services/young/impl/YoungServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="653" column="44" lean-forward="false" selection-start-line="653" selection-start-column="44" selection-end-line="653" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="663" column="1" lean-forward="false" selection-start-line="663" selection-start-column="1" selection-end-line="663" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/TeamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="119" column="25" lean-forward="false" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/inviteTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="55" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/young/controller/young/YoungController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="578" column="55" lean-forward="true" selection-start-line="578" selection-start-column="55" selection-end-line="578" selection-end-column="55" />
+        <state relative-caret-position="1216">
+          <caret line="594" column="0" lean-forward="false" selection-start-line="594" selection-start-column="0" selection-end-line="594" selection-end-column="0" />
           <folding>
             <element signature="method#learningTeam#0;class#YoungController#0" expanded="false" />
             <element signature="method#userDetail#0;class#YoungController#0" expanded="false" />
@@ -1236,6 +1244,14 @@
             <element signature="method#change_user_info#0;class#YoungController#0" expanded="false" />
             <element signature="method#get_mates#0;class#YoungController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web/jsp/index2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
