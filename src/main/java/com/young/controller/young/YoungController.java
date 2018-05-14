@@ -585,7 +585,21 @@ public class YoungController extends BaseController {
     @RequestMapping(value = "/inviteTeacher", method = RequestMethod.GET)
     public ModelAndView inviteTeacher() throws Exception {
         ModelAndView modelAndView = getModelAndView();
+        ArrayList<TeacherVo> teacherVos = youngService.get_allteacher();
+        modelAndView.getModel().put("teacherVos",teacherVos);
+
+        for(TeacherVo tv:teacherVos){
+            System.out.println(tv.gettName());
+        }
+
         modelAndView.setViewName("inviteTeacher");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "teacher", method = RequestMethod.GET)
+    public ModelAndView teacher() throws Exception {
+        ModelAndView modelAndView = getModelAndView();
+        modelAndView.setViewName("teacher");
         return modelAndView;
     }
 }

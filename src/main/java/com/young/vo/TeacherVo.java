@@ -4,12 +4,11 @@ public class TeacherVo {
     private Integer tId;
     private String tName;
 
-    public int gettId() {
-
+    public Integer gettId() {
         return tId;
     }
 
-    public void settId(int tId) {
+    public void settId(Integer tId) {
         this.tId = tId;
     }
 
@@ -21,4 +20,11 @@ public class TeacherVo {
         this.tName = tName;
     }
 
+    @Override
+    public String toString() {
+        return "TeacherVo{" +
+                "tId=" + tId +
+                ", tName='" + tName + '\'' +
+                '}';
+    }
 }

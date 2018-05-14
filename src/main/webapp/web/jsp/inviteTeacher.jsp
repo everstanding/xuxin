@@ -69,8 +69,13 @@
             <p>TEACHER</p>
         </div>
         <div style="float:left">
+            <a href="/young/teacher"><p>老师姓名</p></a> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
             <p>老师姓名</p> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
-            <p>老师姓名</p> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
+            <div>
+                <c:forEach items="${teacherVos}" var="item"    varStatus="id" >
+                    <p>${item.tName}</p>
+                </c:forEach>
+            </div>
         </div>
         <div class="item" style="float:right">
             <img src="/web/images/2.jpg" alt="">

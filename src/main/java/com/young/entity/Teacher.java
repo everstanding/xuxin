@@ -3,7 +3,6 @@ package com.young.entity;
 import javax.persistence.*;
 
 
-@Table(name = "teacher")
 @Entity
 public class Teacher {
     private int tId;

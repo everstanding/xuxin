@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>邀请老师</title>
+    <title>教师信息</title>
 
     <!---------css----------->
     <link href="${pageContext.request.contextPath}/web/css/bootstrap.min.css" rel="stylesheet">
@@ -66,20 +66,20 @@
     <div id="my-middle-container">
         <div class="global-title">
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-            <p>TEACHER</p>
+            <p>个人信息</p>
         </div>
-        <div style="float:left">
-            <a href="/young/teacher"><p>老师姓名</p></a> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
-            <p>老师姓名</p> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
-            <div>
-                <c:forEach items="${teacherVos}" var="item"    varStatus="id" >
-                    <p>${item.tName}</p>
-                </c:forEach>
-            </div>
+        <div>
+            <p>姓名：xxx</p>
+            <p>研究方向：</p>
+            <p>学历</p>
+            <p>手机号码</p>
         </div>
-        <div class="item" style="float:right">
-            <img src="/web/images/2.jpg" alt="">
+
+        <div class="global-title">
+            <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <p>资料</p>
         </div>
+        <p>.......</p>
     </div>
 
 
