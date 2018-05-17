@@ -71,7 +71,8 @@
         <div style="float:left">
             <div>
                 <c:forEach items="${teacherVos}" var="item"    varStatus="id" >
-                    <a href="/young/teacher"><p>${item.tName}</p></a> <input type="submit" value="邀请"  name="submit" class="my-btn"/>
+                    <a href="/young/${item.tId}/teacher"><p>${item.tName}</p></a>
+                        <input type="submit" value="邀请"  name="submit" class="my-btn"/>
                     <p> --------------------------------------------------------------</p>
                 </c:forEach>
             </div>

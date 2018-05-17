@@ -62,7 +62,7 @@
         </div>
         <div>
             <c:forEach items="${users}" var="item"    varStatus="id" >
-                <p>${item.uName}</p> <input type="submit" value="删除用户"  name="submit" class="my-btn"/>
+                <p>${item.uName}</p> <button type="button" class="my-bin"><a href="/young/del_student/${item.uId}">删除</a></button>
                 <p></p>
             </c:forEach>
         </div>
@@ -72,7 +72,7 @@
         </div>
         <div>
             <c:forEach items="${teachers}" var="item"    varStatus="id" >
-                <p>${item.tName}</p> <input type="submit" value="删除用户"  name="submit" class="my-btn"/>
+                <p>${item.tName}</p> <button type="button" class="my-bin"><a href="/young/del_teacher/${item.tId}">删除</a></button>
                 <p></p>
             </c:forEach>
         </div>

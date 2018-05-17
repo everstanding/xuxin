@@ -601,9 +601,14 @@ public class YoungController extends BaseController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "teacher", method = RequestMethod.GET)
-    public ModelAndView teacher() throws Exception {
+    @RequestMapping(value = "/{tId}/teacher", method = RequestMethod.GET)
+    public ModelAndView teacher(
+            @PathVariable("tId")    int tId
+    ) throws Exception {
         ModelAndView modelAndView = getModelAndView();
+        TeacherDetailVo teacherDetailVo = youngService.get_teacher(tId);
+        System.out.println(teacherDetailVo.toString());
+        modelAndView.getModel().put("teacherDetailVo", teacherDetailVo);
         modelAndView.setViewName("teacher");
         return modelAndView;
     }

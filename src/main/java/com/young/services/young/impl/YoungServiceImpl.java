@@ -661,4 +661,34 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
                 ,UserVo.class,new Object[]{});
         return users;
     }
+
+    @Override
+    public int del_student(int u_id) {
+        User user = baseDAO.findById(u_id,User.class);
+        if (user==null ||user.getuId()!=u_id)return  -1;
+        else baseDAO.delete(user);
+        return 1;
+    }
+
+    @Override
+    public int del_teacher(int t_id) {
+        Teacher teacher = baseDAO.findById(t_id,Teacher.class);
+        if (teacher==null ||teacher.gettId()!=t_id)return  -1;
+        else baseDAO.delete(teacher);
+        return 1;
+    }
+
+    @Override
+    public TeacherDetailVo get_teacher(int t_id) {
+        Teacher teacher = baseDAO.findById(t_id,Teacher.class);
+        if (teacher==null)return null;
+        else {
+            TeacherDetailVo tdv = new TeacherDetailVo();
+            tdv.settName(teacher.gettName());
+            tdv.settArea(teacher.gettArea());
+            tdv.settCredit(teacher.gettCredit());
+            tdv.settPhone(teacher.gettPhone());
+            return tdv;
+        }
+    }
 }

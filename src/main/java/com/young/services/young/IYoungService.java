@@ -46,6 +46,9 @@ public interface IYoungService {
     public ArrayList<TeacherVo> get_allteacher();
     public ArrayList<UserVo> get_allstudent();
     public int add_post(int u_id , String title , String main);
+    public int del_student(int u_id);
+    public int del_teacher(int t_id);
 
+    public TeacherDetailVo get_teacher(int t_id);
 
 }

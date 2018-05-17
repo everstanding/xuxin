@@ -69,10 +69,10 @@
             <p>个人信息</p>
         </div>
         <div>
-            <p>姓名：xxx</p>
-            <p>研究方向：</p>
-            <p>学历</p>
-            <p>手机号码</p>
+            <p>姓名：${teacherDetailVo.tName}</p>
+            <p>研究方向：${teacherDetailVo.tArea}</p>
+            <p>学历：${teacherDetailVo.tCredit}</p>
+            <p>手机号码：${teacherDetailVo.tPhone}</p>
         </div>
 
         <div class="global-title">
