@@ -41,12 +41,12 @@ public class FileController extends BaseController {
         int recode = youngService.upfile(teacherVo.gettId(),file.getOriginalFilename(),filePath);
         if (recode == 1) {
             modelAndView.getModel().put("msg", "上传成功");
-            modelAndView.getModel().put("url", "/young/study");
+            modelAndView.getModel().put("url", "/young/files");
             System.out.println(2);
             modelAndView.setViewName("result");
         } else {
             modelAndView.getModel().put("msg", "上传失败");
-            modelAndView.getModel().put("url", "/young/study");
+            modelAndView.getModel().put("url", "/young/files");
             System.out.println(2);
             modelAndView.setViewName("result");
         }

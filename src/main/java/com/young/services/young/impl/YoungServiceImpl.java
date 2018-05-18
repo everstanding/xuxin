@@ -662,21 +662,6 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
         return users;
     }
 
-    @Override
-    public int del_student(int u_id) {
-        User user = baseDAO.findById(u_id,User.class);
-        if (user==null ||user.getuId()!=u_id)return  -1;
-        else baseDAO.delete(user);
-        return 1;
-    }
-
-    @Override
-    public int del_teacher(int t_id) {
-        Teacher teacher = baseDAO.findById(t_id,Teacher.class);
-        if (teacher==null ||teacher.gettId()!=t_id)return  -1;
-        else baseDAO.delete(teacher);
-        return 1;
-    }
 
     @Override
     public TeacherDetailVo get_teacher(int t_id) {
@@ -690,5 +675,27 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
             tdv.settPhone(teacher.gettPhone());
             return tdv;
         }
+    }
+
+    @Override
+    public List<studyfile> get_file_of_teacher(int t_id) {
+        List<studyfile> files = baseDAO.findByProperty("tId",t_id,studyfile.class);
+        return files;
+    }
+
+    public int add_invite(int t_id,int u_id){
+        Invite invite = new Invite();
+        invite.setStatus(0);
+        invite.setT_id(t_id);
+        invite.setU_id(u_id);
+        baseDAO.save(invite);
+        return 1;
+    }
+
+    public ArrayList<InviteVo> get_invite_of_student(int u_id){
+        ArrayList<InviteVo> invites = (ArrayList<InviteVo>) baseDAO.findBySQLForVO("" +
+                        "select t.t_name as tName,i.status as status from invite i join Teacher t on i.t_id = t.t_id"
+                ,InviteVo.class,new Object[]{});
+        return invites;
     }
 }

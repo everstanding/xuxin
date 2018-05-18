@@ -68,17 +68,43 @@
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
             <p>TEACHER</p>
         </div>
-        <div style="float:left">
-            <div>
-                <c:forEach items="${teacherVos}" var="item"    varStatus="id" >
-                    <a href="/young/${item.tId}/teacher"><p>${item.tName}</p></a>
-                        <input type="submit" value="邀请"  name="submit" class="my-btn"/>
-                    <p> --------------------------------------------------------------</p>
-                </c:forEach>
+        <div>
+            <div style="float:left">
+                <div>
+                    <c:forEach items="${teacherVos}" var="item"    varStatus="id" >
+                        <a href="/young/${item.tId}/teacher"><p>${item.tName}</p></a>
+                        <!--<input type="submit" value="邀请"  name="submit" class="my-btn"/>-->
+                        <form action="/young/teacher/invite/${item.tId}" method="get">
+                            <input type="submit" value="邀请" class="my-btn">
+                        </form>
+                        <p> --------------------------------------------------------------</p>
+                    </c:forEach>
+                </div>
+            </div>
+            <div class="item" >
+                <img src="/web/images/2.jpg" alt="">
             </div>
         </div>
-        <div class="item" style="float:right">
-            <img src="/web/images/2.jpg" alt="">
+
+        <div class="global-title">
+            <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <p>我发出的邀请</p>
+        </div>
+        <div>
+           <c:forEach items="${invites}" var="item"    varStatus="id" >
+               <div class="message-box">
+                   <p>邀请的老师：${item.tName}</p>
+                   <c:choose>
+                   <c:when test="${item.status==0}">
+                   <p>邀请状态：未接收<p>
+                   </c:when>
+                   <c:otherwise>
+                   <p>邀请状态：已接收<p>
+                   </c:otherwise>
+                   </c:choose>
+                   <hr/>
+               </div>
+           </c:forEach>
         </div>
     </div>
 

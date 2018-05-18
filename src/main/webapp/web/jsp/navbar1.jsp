@@ -17,7 +17,7 @@
                 <ul class="nav navbar-nav">
                     <li class="broadcast"><a href="${pageContext.request.contextPath}/young/index1">首页</a></li>
                     <li class="article"><a href="${pageContext.request.contextPath}/young/share2">学习经验分享</a></li>
-                    <li class="chat"><a href="${pageContext.request.contextPath}/young/chat">交流问题</a></li>
+                    <li class="chat"><a href="${pageContext.request.contextPath}/young/studentInvite">学生邀请</a></li>
                     <li class="study"><a href="${pageContext.request.contextPath}/young/files">教学视频与资料</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

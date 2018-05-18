@@ -79,7 +79,11 @@
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
             <p>资料</p>
         </div>
-        <p>.......</p>
+        <div>
+            <c:forEach items="${studyfiles}" var="item"    varStatus="id" >
+                <p>${item.fName}</p>
+            </c:forEach>
+        </div>
     </div>
 
 

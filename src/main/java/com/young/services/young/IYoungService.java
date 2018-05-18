@@ -1,9 +1,6 @@
 package com.young.services.young;
 
-import com.young.entity.Floor;
-import com.young.entity.Post;
-import com.young.entity.Study;
-import com.young.entity.studyfile;
+import com.young.entity.*;
 import com.young.vo.*;
 
 import java.util.ArrayList;
@@ -46,9 +43,9 @@ public interface IYoungService {
     public ArrayList<TeacherVo> get_allteacher();
     public ArrayList<UserVo> get_allstudent();
     public int add_post(int u_id , String title , String main);
-    public int del_student(int u_id);
-    public int del_teacher(int t_id);
 
     public TeacherDetailVo get_teacher(int t_id);
-
+    public List<studyfile> get_file_of_teacher(int t_id);
+    public int add_invite(int t_id,int u_id);
+    public ArrayList<InviteVo> get_invite_of_student(int u_id);
 }

@@ -3,6 +3,7 @@ package com.young.controller.young;
 import com.framework.util.FileUtil;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.young.controller.base.BaseController;
+import com.young.entity.Invite;
 import com.young.entity.Post;
 import com.young.entity.studyfile;
 import com.young.json.BaseJson;
@@ -592,11 +593,9 @@ public class YoungController extends BaseController {
         ModelAndView modelAndView = getModelAndView();
         ArrayList<TeacherVo> teacherVos = youngService.get_allteacher();
         modelAndView.getModel().put("teacherVos",teacherVos);
-
-        for(TeacherVo tv:teacherVos){
-            System.out.println(tv.gettName());
-        }
-
+        UserVo userVo = getUserSession();
+        ArrayList<InviteVo> invites = youngService.get_invite_of_student(userVo.getuId());
+        modelAndView.getModel().put("invites",invites);
         modelAndView.setViewName("inviteTeacher");
         return modelAndView;
     }
@@ -609,7 +608,24 @@ public class YoungController extends BaseController {
         TeacherDetailVo teacherDetailVo = youngService.get_teacher(tId);
         System.out.println(teacherDetailVo.toString());
         modelAndView.getModel().put("teacherDetailVo", teacherDetailVo);
+        List<studyfile> studyfiles = youngService.get_file_of_teacher(tId);
+        modelAndView.getModel().put("studyfiles",studyfiles);
         modelAndView.setViewName("teacher");
+        return modelAndView;
+    }
+
+
+    @RequestMapping(value = "/teacher/invite/{tId}", method = RequestMethod.GET)
+    public ModelAndView invite(
+            @PathVariable("tId")int tId
+    ) throws Exception {
+        ModelAndView modelAndView = getModelAndView();
+        UserVo userVo = getUserSession();
+        System.out.println(userVo.toString());
+        youngService.add_invite(tId,userVo.getuId());
+        modelAndView.getModel().put("msg", "邀请成功");
+        modelAndView.getModel().put("url", "/young/inviteTeacher");
+        modelAndView.setViewName("result");
         return modelAndView;
     }
 
