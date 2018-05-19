@@ -156,6 +156,17 @@ public class YoungController extends BaseController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/{tid}/teamDetail1", method = RequestMethod.GET)
+    public ModelAndView teamDetail1(
+            @PathVariable("tid") int tid
+    ) throws Exception {
+        ModelAndView modelAndView = getModelAndView1();
+        TeamListVo teamListVo = youngService.get_team_info_by_id(tid);
+        modelAndView.getModel().put("team", teamListVo);
+        modelAndView.setViewName("teamDetail");
+        youngService.team_num_update(1, tid);
+        return modelAndView;
+    }
 
     @RequestMapping(value = "/userInfo", method = RequestMethod.GET)
     public ModelAndView userInfo() throws Exception {
@@ -629,4 +640,26 @@ public class YoungController extends BaseController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/studentInvite", method = RequestMethod.GET)
+    public ModelAndView studentInvite() throws Exception {
+        ModelAndView modelAndView = getModelAndView1();
+        TeacherVo teacherVo = getTeacherSession();
+        ArrayList<InviteVo> invites = youngService.get_invite_of_teacher(teacherVo.gettId());
+        System.out.println(invites.get(0).toString());
+        modelAndView.getModel().put("invites",invites);
+        modelAndView.setViewName("studentInvite");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/teacher/agree/{inviteId}", method = RequestMethod.GET)
+    public ModelAndView invite1(
+            @PathVariable("inviteId")int inviteId
+    ) throws Exception {
+        ModelAndView modelAndView = getModelAndView1();
+        youngService.change_status(inviteId);
+        modelAndView.getModel().put("msg", "接受成功");
+        modelAndView.getModel().put("url", "/young/studentInvite");
+        modelAndView.setViewName("result");
+        return modelAndView;
+    }
 }

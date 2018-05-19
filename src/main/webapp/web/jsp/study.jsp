@@ -33,6 +33,22 @@
             margin-top: 30px;
         }
 
+        .my-btn{
+            padding: 5px 20px;
+            background-color: #37BC9B;
+            color: #fff;
+            border: none;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            letter-spacing: 4px;
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+
     </style>
 
 </head>
@@ -53,9 +69,9 @@
 
         <form action="/file/uploadFile" method="post" enctype="multipart/form-data">
             <%-- 类型enctype用multipart/form-data，这样可以把文件中的数据作为流式数据上传，不管是什么文件类型，均可上传。--%>
-            <p style="color:slateblue;font-size: 20px">请选择要上传的文件:</p><input type="file" style="border-color: #2aabd2 ;color:slateblue;border-width:5px" name="file" size="50">
+            <p style="color:slateblue;font-size: 20px">请选择要上传的文件:</p><input type="file" class="my-btn" name="file" size="50">
                 <p>                </p>
-                <input type="submit" value="提交2">
+                <input type="submit" value="提交" class="my-btn">
         </form>
 
         <div class="global-title">

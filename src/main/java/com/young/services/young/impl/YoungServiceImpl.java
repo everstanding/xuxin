@@ -683,6 +683,7 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
         return files;
     }
 
+    @Override
     public int add_invite(int t_id,int u_id){
         Invite invite = new Invite();
         invite.setStatus(0);
@@ -692,10 +693,31 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
         return 1;
     }
 
+    @Override
     public ArrayList<InviteVo> get_invite_of_student(int u_id){
         ArrayList<InviteVo> invites = (ArrayList<InviteVo>) baseDAO.findBySQLForVO("" +
-                        "select t.t_name as tName,i.status as status from invite i join Teacher t on i.t_id = t.t_id"
+                        "select t.t_name as tName,i.status as status from invite i join Teacher t on i.t_id = t.t_id where i.u_id="+u_id
                 ,InviteVo.class,new Object[]{});
         return invites;
     }
+
+    @Override
+    public ArrayList<InviteVo> get_invite_of_teacher(int t_id){
+        ArrayList<InviteVo> invites = (ArrayList<InviteVo>) baseDAO.findBySQLForVO("" +
+                        "select u.u_name as uName,i.status as status,i.invite_id as inviteId from invite i join User u on i.u_id = u.u_id where i.t_id="+t_id
+                ,InviteVo.class,new Object[]{});
+        return invites;
+    }
+
+
+
+    @Override
+    public int change_status(int invite_id){
+        Invite invite = baseDAO.findById(invite_id,Invite.class);
+        invite.setStatus(1);
+        baseDAO.update(invite);
+        return 1;
+    }
+
+
 }

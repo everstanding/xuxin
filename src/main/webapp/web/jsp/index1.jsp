@@ -99,7 +99,7 @@
                             </c:forEach>
                         </ul>
                         <div class="other">
-                            <button type="button" class="view-detail gray-button"><a href="/young/${team.tId}/teamDetail" target="_blank">查看详情</a></button>
+                            <button type="button" class="view-detail gray-button"><a href="/young/${team.tId}/teamDetail1" target="_blank">查看详情</a></button>
                             <button type="button" class="add-team gray-button" onclick="f(${team.tId})">加入组队</button>
                                 <%-- <button type="button" class="thumbs-up">赞(${team.tTumbNum})</button>--%>
                             <p class="hits-number">${team.tWatchNum}</p>

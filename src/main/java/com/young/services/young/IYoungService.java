@@ -48,4 +48,6 @@ public interface IYoungService {
     public List<studyfile> get_file_of_teacher(int t_id);
     public int add_invite(int t_id,int u_id);
     public ArrayList<InviteVo> get_invite_of_student(int u_id);
+    public ArrayList<InviteVo> get_invite_of_teacher(int t_id);
+    public int change_status(int invite_id);
 }
