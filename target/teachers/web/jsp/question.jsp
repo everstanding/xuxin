@@ -102,6 +102,18 @@
             text-indent: 2em;
         }
 
+        .my-textArea{
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border:2px solid #37BC9B;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            outline: none
+        }
     </style>
 
 </head>
@@ -120,28 +132,27 @@
             <p>提出看法和回答</p>
         </div>
         <div>
-            <h4 class="sub-title">问题</h4>
-
-            <form action="save.php" method="post" >
-            <textarea id="question-text" placeholder="在这提出你的想法和见解……"></textarea>
+            <h4 class="sub-title">问题:${post.pMain}</h4>
+            <form action="/young/${p_id}/add_floor" id="sub" method="post">
+            <textarea name="main" id="main" class="my-textArea" placeholder="在这提出你的想法和见解……"></textarea>
             <input type="submit" value="提交"  name="submit" class="my-btn"/>
             <input type="reset" value="重置"  name="reset" class="my-btn"/>
             </form>
         </div>
         <div class="global-title">
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-            <p>评论区</p>
+            <p>评论区                     目前一共${post.pFloor}层回复</p>
         </div>
 
         <div class="comment-wrap">
             <ul id="comment-list">
-                <c:forEach items="${teams}" var="team"    varStatus="id" >
+                <c:forEach items="${floors}" var="team"    varStatus="id" >
                     <li class="comment-box">
                         <div class="box-header">
-                            <p class="user-name">羊羊太郎</p>
-                            <p class="sub-info">12 floor</p>
+                            <p class="user-name">${team.uName}</p>
+                            <p class="sub-info" >第${id.index+1}楼</p>
                         </div>
-                        <div class="content">评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</div>
+                        <div class="content">${team.fMain}</div>
                     </li>
                 </c:forEach>
             </ul>

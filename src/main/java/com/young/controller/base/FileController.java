@@ -38,6 +38,7 @@ public class FileController extends BaseController {
         }
         ModelAndView modelAndView = new ModelAndView();
         TeacherVo teacherVo = getTeacherSession();
+        System.out.println(file.getOriginalFilename());
         int recode = youngService.upfile(teacherVo.gettId(),file.getOriginalFilename(),filePath);
         if (recode == 1) {
             modelAndView.getModel().put("msg", "上传成功");

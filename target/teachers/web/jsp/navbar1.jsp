@@ -19,6 +19,7 @@
                     <li class="article"><a href="${pageContext.request.contextPath}/young/share2">学习经验分享</a></li>
                     <li class="chat"><a href="${pageContext.request.contextPath}/young/studentInvite">学生邀请</a></li>
                     <li class="study"><a href="${pageContext.request.contextPath}/young/files">教学视频与资料</a></li>
+                    <li class="exit"><a href="${pageContext.request.contextPath}/young/formlogin">退出</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="teacher-name"><a href="${pageContext.request.contextPath}/young/teacherInfo">${USER.tName}</a></li>

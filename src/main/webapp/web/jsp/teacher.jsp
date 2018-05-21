@@ -81,7 +81,7 @@
         </div>
         <div>
             <c:forEach items="${studyfiles}" var="item"  varStatus="id" >
-                <a href="${pageContext.request.contextPath}/file/downloadFile/${item.fName}">${item.fName}</a>
+                <a href="${pageContext.request.contextPath}/file/downloadFile/${item.fId}"><p>${item.fName}</p></a>
             </c:forEach>
         </div>
         </div>

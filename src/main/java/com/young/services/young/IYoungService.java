@@ -39,6 +39,7 @@ public interface IYoungService {
 
     public ArrayList<PostVo> get_post_by_page(int page);
     public Post get_post_by_id(int id);
+    public List<FloorVo> get_floors (int p_id);
     public ArrayList<FloorVo> get_floors_by_page(int p_id);
     public ArrayList<TeacherVo> get_allteacher();
     public ArrayList<UserVo> get_allstudent();

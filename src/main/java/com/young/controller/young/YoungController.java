@@ -580,6 +580,7 @@ public class YoungController extends BaseController {
         ModelAndView modelAndView = new ModelAndView();
         UserVo userVo = getUserSession();
         Post post = youngService.get_post_by_id(p_id);
+        modelAndView.getModel().put("floors",youngService.get_floors(p_id));
         modelAndView.getModel().put("post",post);
         modelAndView.getModel().put("p_id",p_id);
         modelAndView.setViewName("question");
@@ -596,6 +597,7 @@ public class YoungController extends BaseController {
             @RequestParam("main") String main
     ) throws Exception {
         ModelAndView modelAndView = new ModelAndView();
+        main = new String(main.getBytes("iso8859-1"), "utf-8");
         UserVo userVo = getUserSession();
         youngService.add_floor(p_id,main,userVo.getuId());
         modelAndView.setViewName("redirect:/young/"+p_id+"/post");

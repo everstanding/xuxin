@@ -638,6 +638,12 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
     }
 
     @Override
+    public List<FloorVo> get_floors (int p_id){
+        List<FloorVo> fvs = baseDAO.findBySQLForVO("select f.f_id as fId , f.f_main as fMain , u.u_name as uName  from floor f join user u on f.u_id = u.u_id where f.p_id = ?",FloorVo.class,new Object[]{p_id});
+        return fvs;
+    }
+
+    @Override
     public ArrayList<FloorVo> get_floors_by_page(int p_id) {
         ArrayList<FloorVo> posts = (ArrayList<FloorVo>) baseDAO.findBySQL("" +
                         "select p.p_id as pId , p.p_floor as pFloor , p.p_main as pMain , p.p_title as pTitle" +
@@ -696,8 +702,8 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
     @Override
     public ArrayList<InviteVo> get_invite_of_student(int u_id){
         ArrayList<InviteVo> invites = (ArrayList<InviteVo>) baseDAO.findBySQLForVO("" +
-                        "select t.t_name as tName,i.status as status from invite i join Teacher t on i.t_id = t.t_id where i.u_id="+u_id
-                ,InviteVo.class,new Object[]{});
+                        "select t.t_name as tName,i.status as status from invite i join Teacher t on i.t_id = t.t_id where i.u_id=?"
+                ,InviteVo.class,new Object[]{u_id});
         return invites;
     }
 
@@ -726,6 +732,9 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
        floor.setfMain(main);
        floor.setuId(u_id);
        baseDAO.save(floor);
+       Post post = baseDAO.findById(p_id,Post.class);
+       post.setpFloor(post.getpFloor()+1);
+       baseDAO.update(post);
     }
 
     @Override

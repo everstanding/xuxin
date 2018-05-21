@@ -2,11 +2,7 @@ package com.young.entity;
 
 
 
-import javax.persistence.Entity;
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Id;
-
+import javax.persistence.*;
 
 
 @Entity
@@ -14,11 +10,12 @@ public class Floor {
 
     private Integer fId;
     private Integer pId;
-    private Integer uId;
     private String fMain;
+    private Integer uId;
 
 
     @Id
+    @GeneratedValue(strategy = GenerationType. IDENTITY)
     @Column(name = "f_id", nullable = false)
     public Integer getfId() {
         return fId;
@@ -49,7 +46,6 @@ public class Floor {
     public void setuId(Integer uId) {
         this.uId = uId;
     }
-
 
     @Basic
     @Column(name = "f_main", nullable = false)
