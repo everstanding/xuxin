@@ -54,25 +54,23 @@ public class FileController extends BaseController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/downloadFile/{id}/{Url:.+}", method = RequestMethod.GET)
-    private void  downloadFile(@PathVariable("id") int id,
-                               @PathVariable("Url") String Url){
+    @RequestMapping(value = "/downloadFile/{id}", method = RequestMethod.GET)
+    private void  downloadFile(@PathVariable("id") int id){
         try {
+            String filename = youngService.file_name(id) ;
             //根据文件id在数据库中获取文件名
-            String fileName = Url;
-            long class_id = 1;
             //文件所在目录路径
             String filePath = getHttpRequest().getSession().getServletContext().getRealPath(File.separator)+File.separator+
-                    "web"+File.separator+"file"+File.separator+"ClassFile"+File.separator+class_id+File.separator;
-            System.out.println(filePath+fileName);
-            File file = new File(filePath+fileName);
+                    "web"+File.separator+"studyfile"+File.separator;
+            System.out.println(filePath+filename);
+            File file = new File(filePath+filename);
             if(!file.exists()){
                 System.out.println("Have no such file!");
                 return;//文件不存在就退出方法
             }
             FileInputStream fileInputStream = new FileInputStream(file);
             //设置Http响应头告诉浏览器下载这个附件
-            getHttpResponse().setHeader("Content-Disposition", "attachment;Filename=" + URLEncoder.encode(fileName, "UTF-8"));
+            getHttpResponse().setHeader("Content-Disposition", "attachment;Filename=" + URLEncoder.encode(filename, "UTF-8"));
             OutputStream outputStream = getHttpResponse().getOutputStream();
             byte[] bytes = new byte[2048];
             int len = 0;

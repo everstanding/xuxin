@@ -50,4 +50,6 @@ public interface IYoungService {
     public ArrayList<InviteVo> get_invite_of_student(int u_id);
     public ArrayList<InviteVo> get_invite_of_teacher(int t_id);
     public int change_status(int invite_id);
+    void add_floor(int p_id , String main,int u_id);
+    String file_name (int file_id);
 }

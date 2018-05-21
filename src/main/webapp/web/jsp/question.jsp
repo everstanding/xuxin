@@ -121,9 +121,8 @@
         </div>
         <div>
             <h4 class="sub-title">问题</h4>
-
-            <form action="save.php" method="post" >
-            <textarea id="question-text" placeholder="在这提出你的想法和见解……"></textarea>
+            <form action="/young/${p_id}/add_floor" id="sub" method="post">
+            <textarea name="main" id="main"  placeholder="在这提出你的想法和见解……"></textarea>
             <input type="submit" value="提交"  name="submit" class="my-btn"/>
             <input type="reset" value="重置"  name="reset" class="my-btn"/>
             </form>

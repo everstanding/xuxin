@@ -80,9 +80,10 @@
             <p>资料</p>
         </div>
         <div>
-            <c:forEach items="${studyfiles}" var="item"    varStatus="id" >
-                <p>${item.fName}</p>
+            <c:forEach items="${studyfiles}" var="item"  varStatus="id" >
+                <a href="${pageContext.request.contextPath}/file/downloadFile/${item.fName}">${item.fName}</a>
             </c:forEach>
+        </div>
         </div>
     </div>
 

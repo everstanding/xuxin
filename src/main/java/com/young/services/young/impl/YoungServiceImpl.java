@@ -719,5 +719,18 @@ public class YoungServiceImpl extends CommServiceImpl implements IYoungService {
         return 1;
     }
 
+    @Override
+    public void add_floor(int p_id, String main,int u_id) {
+       Floor floor = new Floor();
+       floor.setpId(p_id);
+       floor.setfMain(main);
+       floor.setuId(u_id);
+       baseDAO.save(floor);
+    }
 
+    @Override
+    public String file_name(int file_id) {
+        studyfile studyfile = baseDAO.findById(file_id,com.young.entity.studyfile.class);
+        return studyfile.getfName();
+    }
 }

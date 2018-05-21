@@ -581,6 +581,7 @@ public class YoungController extends BaseController {
         UserVo userVo = getUserSession();
         Post post = youngService.get_post_by_id(p_id);
         modelAndView.getModel().put("post",post);
+        modelAndView.getModel().put("p_id",p_id);
         modelAndView.setViewName("question");
         return modelAndView;
     }
@@ -589,13 +590,15 @@ public class YoungController extends BaseController {
 
 
 
-    @RequestMapping(value = "/{p_id}/add_floor", method = RequestMethod.GET)
+    @RequestMapping(value = "/{p_id}/add_floor", method = RequestMethod.POST)
     public ModelAndView add_floor(
-            @PathVariable("p_id") int p_id
+            @PathVariable("p_id") int p_id,
+            @RequestParam("main") String main
     ) throws Exception {
         ModelAndView modelAndView = new ModelAndView();
         UserVo userVo = getUserSession();
-
+        youngService.add_floor(p_id,main,userVo.getuId());
+        modelAndView.setViewName("redirect:/young/"+p_id+"/post");
         return modelAndView;
     }
 
@@ -613,7 +616,7 @@ public class YoungController extends BaseController {
 
     @RequestMapping(value = "/{tId}/teacher", method = RequestMethod.GET)
     public ModelAndView teacher(
-            @PathVariable("tId")    int tId
+            @PathVariable("tId")   int tId
     ) throws Exception {
         ModelAndView modelAndView = getModelAndView();
         TeacherDetailVo teacherDetailVo = youngService.get_teacher(tId);
@@ -621,6 +624,7 @@ public class YoungController extends BaseController {
         modelAndView.getModel().put("teacherDetailVo", teacherDetailVo);
         List<studyfile> studyfiles = youngService.get_file_of_teacher(tId);
         modelAndView.getModel().put("studyfiles",studyfiles);
+        modelAndView.getModel().put("tId",tId);
         modelAndView.setViewName("teacher");
         return modelAndView;
     }
@@ -662,4 +666,5 @@ public class YoungController extends BaseController {
         modelAndView.setViewName("result");
         return modelAndView;
     }
+
 }
